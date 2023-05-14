@@ -1,0 +1,400 @@
+
+html, body{
+    box-sizing: border-box;
+    overflow-x: hidden;
+    margin: 0; padding: 0;
+}
+
+:root {
+  --primary-color: #396c03;
+  --accent-color: #ff8b00;
+  --bg-one: #f0f4ec;
+  --bg-two: #f1efe0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300;400;500;600;700;800&display=swap');
+
+/* Bootstrap css */
+.dropdown-toggle::after {
+  display: none !important;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  content: "";
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
+}
+
+
+/* Nev scc */
+.nav-bg {
+  background-color: var(--bg-one);
+  border-bottom: 1px solid #c4c4c4;
+}
+
+.nav-link {
+  /* border-bottom: 0px solid var(--primary-color); */
+  margin: 0 20px;
+  transition: border 0.2s ease-in-out;
+}
+/*
+.nav-link:hover{
+    border-bottom: 1px solid var(--primary-color);
+    margin: 0 10px;
+    } */
+.btn-primary {
+  background: var(--primary-color);
+}
+.login-btn {
+  background: var(--primary-color);
+  border-radius: 50px;
+  padding: 10px 40px;
+  margin-right: 20px;
+}
+
+.login-btn:hover {
+  background: var(--bg-one);
+  border: 1px solid var(--primary-color);
+  border-radius: 50px;
+  color: #000;
+}
+
+.cart-btn {
+  background: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 100%;
+  color: #fff;
+  padding: 10px 15px;
+}
+
+.cart-btn:hover {
+    background: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 100%;
+    color: #fff;
+    padding: 10px 15px;
+  }
+
+.count {
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  right: 116px;
+  border-radius: 50px;
+  top: 13px;
+  background: var(--accent-color);
+}
+
+
+
+
+/* Hero section style */
+.hero-container{
+    position: relative;
+    background-color: var(--bg-one) ;
+}
+
+.hero-container> .img1{
+        position: absolute;
+        top: -80px;
+}
+
+
+.hero-container::before {
+    content: url(img/leaftwo.png);
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 1007px !important;
+    top: -58px;
+}
+
+/* .hero-container::after{
+    content: url(img/leaftwo.png);
+    width: 100%;
+    height: auto;
+    position: absolute;
+    right: 10px;
+    top:100px
+} */
+
+.hero-left h1{
+    font-family: 'Merienda', cursive;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 65px;
+    color: #396c03;
+}
+
+.hero-left>p {
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    color: rgba(46, 46, 46, 0.467);
+}
+
+.hero-search-input{
+    
+        display: block;
+        width: 500px;
+        height: 50px;
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #212529;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        border-radius: 2.25rem;
+        transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    
+}
+
+.form-control:focus {
+    color: #212529;
+    background-color: #fff;
+
+    border-color: #ced4da;
+
+    box-shadow: 0 0 0 0.25rem rgba(13, 109, 253, 0);
+}
+
+.hero-search-btn {
+    color: #fff;
+    border-color: #396c03;
+    border-radius: 2rem;
+    margin-left: -144px;
+    background: #396c03;
+    width: 135px;
+}
+
+.hero-search-btn:hover {
+    color: #fff;
+    border-color: #396c03;
+    border-radius: 2rem;
+    margin-left: -144px;
+    background: #396c03;
+    width: 135px;
+}
+
+.hero-search-btn:focus {
+    outline: none;
+}
+
+
+.hero-delivered {
+    box-sizing: border-box;
+    position: absolute;
+    right: 275px;
+    z-index: 9;
+    top: 20px;
+    padding: 1px 25px;
+    background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    rgba(255, 255, 255, 0.4) 100%
+  );
+    backdrop-filter: blur(6px);
+    border-radius: 8.86914px;
+}
+
+
+
+.hero-delivered>span{
+    color: #ff8b00;
+    font-size: 30px;
+}
+
+
+@keyframes rotateImage {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .image-container {
+    width: 100%; /* Adjust the width as needed */
+    height: auto; /* Adjust the height as needed */
+    animation: rotateImage 10s linear infinite;
+  }
+
+/* End hero section style */
+
+
+
+/* Explore section style */
+
+.explore-left h1{
+    font-family: 'Merienda', cursive;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 65px;
+    color: #396c03;
+}
+
+
+.explore-btn {
+    background: var(--primary-color);
+    border-radius: 50px;
+    padding: 10px 40px;
+    margin-right: 20px;
+  }
+.explore-btn:hover {
+    background: var(--bg-one);
+    border: 1px solid var(--primary-color);
+    border-radius: 50px;
+    color: #000;
+  }
+
+
+
+.explore-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 400px;
+    background-image: url(img/cycle-bg.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+    background-position: center right;
+    background-size: contain;
+}
+
+.explore-right img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation: moveImage 10s linear infinite;
+  }
+
+  @keyframes moveImage {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
+/* End explore section style */
+/* background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.4) 100%);
+backdrop-filter: blur(6px);
+/* Note: backdrop-filter has minimal browser support */
+
+/* border-radius: 0px*/
+
+
+/* Media quarie css */
+  @media screen and (max-width:1024px) {
+    .hero-left h1{
+        font-family: 'Merienda', cursive;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 34px;
+        line-height: 40px;
+        color: #396c03;
+    }
+
+
+    .hero-delivered {
+        right: 180px;
+        top: 10px;
+  }
+
+
+  .explore-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 300px;
+    background-image: url(img/cycle-bg.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+    background-position: top right;
+    background-size:50%;
+}
+
+
+  .explore-left h1{
+    font-family: 'Merienda', cursive;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 40px;
+    color: #396c03;
+}
+
+  }
+
+
+  @media screen and (max-width:768px) {
+    .hero-container> .img1 {
+        display: none;
+        position: absolute;
+        top: -80px;
+    }
+    .hero-search-input {
+        width: 360px;
+    }
+
+  .hero-delivered {
+    right: 120px;
+    top: 10px;
+}
+  }
+
+
+  @media screen and (max-width: 480px){
+.hero-delivered {
+    right: 129px;
+    top: 368px; 
+}
+
+
+.explore-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 300px;
+    background-image: url(img/cycle-bg.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+    background-position: bottom;
+    background-size: 100%;
+}
+
+.explore-right img {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation: moveImage 10s linear infinite;
+}
+  }
+
+  @media screen and (max-width:380px) {
+    .hero-search-input {
+        width: 300px;
+    }
+
+    .hero-delivered {
+        right: 104px;
+        top: 328px;
+    }
+  }
+/* Media quarie css */
